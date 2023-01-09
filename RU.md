@@ -40,7 +40,7 @@
     </tr>
     <tr align='justify'>
       <td  align='center'>Переход по ссылкам</td>
-      <td >При переходе по ссылкам сраницы с кодом ответа 404 File not found: ссылка "Elements", "Shortcodes API",  "and more ..." </td>
+      <td >При переходе по ссылкам "Elements", "Shortcodes API" сраницы с кодом ответа 404 File not found</td>
       <td></td>
     </tr>
     <tr align='center'>
@@ -48,12 +48,12 @@
     </tr>
   </table>
   
-  Ссылка на баг-репорты:
-  <a href="https://github.com/Awilum/dev/issues/32">Internal Server Error: the image isn't displayed on main page</a>
-  <a href="https://github.com/Awilum/dev/issues/30">404 File not found clicking on the link "Elements" in the feature "Component system" of the project "Thermage"</a>
-  <a href="https://github.com/Awilum/dev/issues/31">404 File not found clicking on the link "Shortcodes API" in the feature "Shortcodes" of the project "Thermage"</a>
+  <p>Ссылка на баг-репорты:<br>
+  <a href="https://github.com/Awilum/dev/issues/32">Internal Server Error: the image isn't displayed on main page</a><br>
+  <a href="https://github.com/Awilum/dev/issues/30">404 File not found clicking on the link "Elements" in the feature "Component system" of the project "Thermage"</a><br>
+  <a href="https://github.com/Awilum/dev/issues/31">404 File not found clicking on the link "Shortcodes API" in the feature "Shortcodes" of the project "Thermage"</a><br>
   <a href="https://github.com/Awilum/dev/issues/34">Two identical links to the cheat sheet in the Telegram message </a>
-
+  </p>
   Ссылка на предложенные улучшения:
 
 
