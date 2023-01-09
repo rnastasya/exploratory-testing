@@ -1,4 +1,3 @@
-
 <h1> Исследовательское тестирование </h1>
  Результаты проведения исследовательского тестирования по турам Дж.Уитаккера портала о разработке программного обеспечения от @Awilum (https://awilum.github.io).
 
@@ -165,8 +164,3 @@
 <a href="https://github.com/Awilum/dev/issues/34">404 File not found clicking on the link "MAMP" in the "Thermage" documentation point "Requirements"</a>
 
 Ссылка на предложенные улучшения:
-
-
-
-
-
