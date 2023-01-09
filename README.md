@@ -1,172 +1,159 @@
+<h1>Exploratory Testing Report</h1>
 
-<h1> Исследовательское тестирование </h1>
- Результаты проведения исследовательского тестирования по турам Дж.Уитаккера портала о разработке программного обеспечения от @Awilum (https://awilum.github.io).
+<p>The results of exploratory testing of a <a href="https://awilum.github.io">software development portal </a> by <a href="https://github.com/Awilum">@Awilum</a> using <a href="https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/jj620911(v=vs.120)?redirectedfrom=MSDN#exploratory-testing-tours">J.Whittaker's tours</a>.</p>
+<p>Вы также можете ознакомиться с результатами проведения исследовательского тестирования на <a href="RU.md">русском языке</a>.</p>
 
-<h2>О тестируемом проекте</h2>
+<h2>Which tours are selected</h2>
+<p>Аfter viewing and analyzing the functions of the portal, I chose three tours:</p>
+<ul>
+<li><a href="#the_supermodel_tour">The Supermodel Tour</a> to view the structure of the portal, interface.  </li>
+<li><a href="#the_garbage_collector’s_tour">The Garbage Collector’s Tour</a> to quickly check the transition through the internal structure of the projects presented on the portal. </li>
+<li><a href="#the_landmark_tour">The Landmark Tour</a>  for a detailed review of the links and navigation in the documentation (project "Flextype")</li>
+ </ul>
+ <p>Links to the general description of the tours:
+ <br><a href="https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/jj620911(v=vs.120)?redirectedfrom=MSDN#the-supermodel-tour">The Supermodel Tour</a><br>
+ <a href="https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/jj620911(v=vs.120)?redirectedfrom=MSDN#the-garbage-collectors-tour">The Garbage Collector’s Tour</a><br>
+ <a href="https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/jj620911(v=vs.120)?redirectedfrom=MSDN#the-landmark-tour">The Landmark Tour</a></p>
+ 
 
-
-
-<h2>Какие туры выбраны и почему</h2>
-<p>Для тестирования выбраны 3 тура:</p>
-<p>Тур супермодели - для поверхностного просмотра структуры сайта, интерфейса.  </p>
-<p>Тур сборщика мусора - для проверки перехода по внутренней структуре проектов, представленных на портале. </p>
-<p>Тур по ориентирам - для детального рассмотрения связей в документации проекта Flextype.</p>
-
-<h3>Тур супермодели</h3>
-<p>Цель тура: проверить как выглядит портал и какое первое впечатление производит.</p>
-<p>Окружение:  оpera v. 93.0.4585.37</p>
+<h3 id="the_supermodel_tour">The Supermodel Tour</h3>
+<p>Goal of the tour: watch the interface elements</p>
+<p>Environment:  оpera v. 93.0.4585.37</p>
   <table style='width:100%' >
     <thead>
       <tr align='center'>
-        <th >Что успели протестировать?</th>
-        <th>На что обратили внимание?</th>
-        <th>Приложения</th>
+        <th>Tested</th>
+        <th>Noticed</th>
+        <th>Attachment</th>
       </tr>
     </thead>
     <tr align='justify'>
-      <td>Главная страница сайта</td>
-      <td align='justify'>Возможен переход по ссылкам рядом с заголовками к таким разделам сайта, как информация об авторе и проектах. В разделе opensource contributions не отображается изображение (рис.1)</td>
-      <td align='centrer'><img src="img/image_isn't_displayed.jpg"><p>Рис.1</p></td>
+      <td>Main page</td>
+      <td align='justify'>There are links to sections of the site located next to the titles about the author and projects. The image isn't displayed in the open source contributions section (attachment 1)</td>
+      <td align='centrer'><img src="img/image_isn't_displayed.jpg"><p>attachment 1</p></td>
     </tr>
      <tr align='justify'>
-      <td>Меню</td>
-      <td>Выделен активный раздел сайта. Разделы подсвечиваются при наведении на них курсора. При изменении раздела, подсвечивается выбранный раздел сайта.</td>
+      <td>Menu</td>
+      <td>The active section of the site is highlighted. Sections are highlighted when you hover the cursor over them. When changing a section, the selected section of the site is highlighted.</td>
       <td></td>
     </tr>
     <tr align='justify'>
-      <td>Вкладка проекты</td>
+      <td>Projects</td>
       <td rowspan="">
-      <p>Переход по ссылкам к старницам с подробной информацией о проектах. Есть ссылки, ведущие на внешние сайты с информацией о проектах, заменяя вкладку сайта. <b>Предложение по улучшению:</b> если ссылка ведет на внешний сайт, сделать открытие в новом окне.</p>
-      <p>Проект Master Blocks: форматирование загаловка отличается от заголовков в других проектах.</p>
-      <p>Проект Chetlist: в области. Также представлена возможность поделится чит-листом по ссылкам. Не очевидно,для чего эти ссылки. <b>Предложение по улучшению:</b> добавить подсказку для поьзователя, напремер "Share chit-lists on". <b>Возможный баг:</b> при отправлении ссылки в телеграм дублируется адрес сайта (рис.2).</p>
-      <p>Проект Thermage: большое расстояние между загаловками. Выделяется пустое простраство в блоках features. Также при переключении между разделами не выделяется открытый элемент (рис.3).<b> Предложение по улучшению:</b> добавить выделение открытого элемента.</p>
-      <p>На странице с проектами Flextype и Glowy PHP при наведении на разделы идет посветка. При выборе разделов, посвеченным остается первый раздел (рис.4). <b>Предложение по улучшению:</b> добавить выделение открытого элемента</p></td>
-      <td><img src="img/double_link_tg.jpg"><p align='centrer'>Рис.2</p> <img src="img/ui_ux_THERMAGE.gif"><p>Рис.3</p><img src="img/highlighted_subsection_is't_highlighted.gif"><p>Рис.4</p></td> 
+      <p>When a link points to an external site, it open in a separate tab. <b>Feature suggestion:</b> to open external site in a separate tab.</p>
+      <p>Project "Master Blocks": The formatting of the header with the project's name is different from other projects headers.</p>
+      <p>Project "Cheatsheets": large free space on the right side of the page. User can share the cheat sheet. <b>Feature suggestion:</b> add a hint for the user above the social sharing links, for example "Share cheatsheet on". When sending a link to telegram, the site address is duplicated
+      (attachment 2).</p>
+      <p>Project "Thermage": large space between headers. Выделяется пустое простраство в блоках features.The open element is not highlighted when switching between sections (attachment 3).<b> Feature suggestion:</b> add highlighting of an open element .</p>
+      <p>Projects "Flextype" and "Glowy PHP": when you hover over the sections, there is a backlight. When other selecting sections, the first section remains highlighted (with the main page of the project)(attachment 4). <b> Feature suggestion:</b> add highlighting of an open menu item</p></td>
+      <td><img src="img/double_link_tg.jpg"><p align='centrer'>attachment 2</p> <img src="img/ui_ux_THERMAGE.gif"><p>attachment 3</p><img src="img/highlighted_subsection_is't_highlighted.gif"><p>attachment 4</p></td> 
     </tr>
     <tr align='justify'>
-      <td  align='center'>Переход по ссылкам</td>
-      <td >При переходе по ссылкам сраницы с кодом ответа 404 File not found: ссылка "Elements", "Shortcodes API",  "and more ..." </td>
+      <td  align='center'>Links</td>
+      <td >When clicking on the links "Elements", "Shortcodes API", "and more ..." the pages open with errors</td>
       <td></td>
     </tr>
     <tr align='center'>
-      <td colspan="5">Затраченное время: 40 мин</td>
+      <td colspan="5">Timeframe : 40 min</td>
     </tr>
   </table>
   
-  Ссылка на баг-репорты:
-  <a href="https://github.com/Awilum/dev/issues/32">Internal Server Error: the image isn't displayed on main page</a>
-  <a href="https://github.com/Awilum/dev/issues/30">404 File not found clicking on the link "Elements" in the feature "Component system" of the project "Thermage"</a>
-  <a href="https://github.com/Awilum/dev/issues/31">404 File not found clicking on the link "Shortcodes API" in the feature "Shortcodes" of the project "Thermage"</a>
-  <a href="https://github.com/Awilum/dev/issues/34">Two identical links to the cheat sheet in the Telegram message </a>
+  <p>Links to bug reports:<br>
+  <a href="https://github.com/Awilum/dev/issues/32">Internal Server Error: the image isn't displayed on main page</a><br>
+  <a href="https://github.com/Awilum/dev/issues/30">404 File not found clicking on the link "Elements" in the feature "Component system" of the project "Thermage"</a><br>
+  <a href="https://github.com/Awilum/dev/issues/31">404 File not found clicking on the link "Shortcodes API" in the feature "Shortcodes" of the project "Thermage"</a><br>
+  <a href="https://github.com/Awilum/dev/issues/34">Two identical links to the cheat sheet in the Telegram message </a></p>
+ 
+  <p>Links to feature suggestions:</p>
 
-  Ссылка на предложенные улучшения:
-
-
-
-
-<h3>Тур сборщика мусора (The garbsge collection tour)</h3>
-<p>Цель тура: не останавливаясь для детального тестирования в проектах дойти</p>
-<p>Окружение:  оpera v. 93.0.4585.37</p>
+<h3 id="the_garbage_collector’s_tour">The Garbsge Collection Tour</h3>
+<p>Goal of the tour:  go screen by screen, not stopping to test in detail, but checking the obvious things </p>
+<p>Environment:  оpera v. 93.0.4585.37</p>
 <table style='width:100%'>
     <thead>
         <tr align='center'>
-        <th >Что успели протестировать?</th>
-        <th>На что обратили внимание?</th>
-        <th>Приложения</th>
+        <th>Tested</th>
+        <th>Noticed</th>
+        <th>Attachment</th>
         </tr>
     </thead>
     <tr align='justify'>
-        <td rowspan="2" align='center'>Проект Cheatsheets </td>
-        <td><b>Возможный баг:</b> в пути под заголовком раздела с чит-листом по Linux не активна ссылка возвращения к общей странице раздела Cheetlist. Можно предположить, что она должна быть активна - так как в ранее расмотренных разделах под заголовком подраздела нахотся путь </td>
+        <td rowspan="2" align='center'>Projects "Cheatsheets" </td>
+        <td>There is no link to return to the main page of the section in the path under the heading of the section with the cheat sheet. It can be assumed that it should be  since in the other projects("Flextype" and "Glowy PHP") under the heading of the subsection there is a path </td>
         <td></td>
     </tr>
         <tr align='justify'>
-        <td >Заголовки блоков названия команд ссылаются на самих себя. <b> Предложение по улучшению:</b>убрать ссылки из заголовка блоков, или добавить перед блоками команд список всех команд, с сылками на аналогичные блоки ниже</td>
+        <td >Section headers with commands refer to themselves. <b> Feature suggestion:</b>remove links from the block header, or add a list of all commands before the command blocks, with links to similar blocks below</td>
         <td></td> 
       </tr> 
     <tr align='justify'>
-        <td align='center'>Проект Thermage </td>
-        <td>Во вкладке Shortcodes сначала идет пример использования и методы и только после страница с шорткодами. При переходе к странице одного из шорт кодов обратила внимание на дубликат страницы Shortcodes, содержащей только список шорткодов. <b> Предложение по улучшению: </b>перенести таблицу шорткодов в начало страницы, убрать дублирующуюся. Также возможный баг в оставлении страницы в пути (рис.)</td>
-        <td><img src="img/shortcodes_path.gif"><p>Рис.</p></td>
+        <td align='center'>Projects "Thermage" </td>
+        <td>In the Shortcuts tab there is an example of usage and methods and only after the page with the shortcodes. When going to the page of one of the shortcodes, I noticed a duplicate of the Shortcodes page containing only a list of shortcodes. <b> Feature suggestion: </b>move the table of shortcodes to the beginning of the page, remove the duplicate one. There is also can be bug in project's path: in other project's page below header path don't contain current page (attachment 5)</td>
+        <td><img src="img/shortcodes_path.gif"><p>attachment 5</p></td>
     </tr>
      <tr align='justify'>
-        <td align='center'>Проект Flextype</td>
-        <td>Объект типа ссылка без добавленной ссылки (рис.). Также обращает на себя внимание меньший межстрочный интервал перечисления в сравнении с основным текстом</td>
-        <td align='centrer'><img src="img/the_link_to_the_author_doesn't_work.gif"><p>Рис.</p></td>
+        <td align='center'>Projects "Flextype"</td>
+        <td>The object of the link type without an added link (attachment 6). Also noteworthy is the smaller line spacing of the enumeration in comparison with the main text</td>
+        <td align='centrer'><img src="img/the_link_to_the_author_doesn't_work.gif"><p>attachment 6</p></td>
     </tr>
     <tr align='justify'>
-        <td align='center'>Проект Glowy PHP</td>
-        <td>Переход к компаненту сисетмы из общей вкладки проекта. При прохождении на вкладки установки, обратила внимание на путь. В меню пункт начала использования не  является отдельным разделом, нажав в пути на этот раздел открылась страница с двумя заголовками ( рис. )</td>
-        <td align='centrer'><img src="img/page_with_titles.jpg"><p>Рис.</p></td>
+        <td align='center'>Projects "Glowy PHP"</td>
+        <td>When going to the installation tabs, I paid attention to the path. In the menu  "Getting Started" item is not a linked section, clicking on this section in the path opened a page with two headings(attachment 7)</td>
+        <td align='centrer'><img src="img/page_with_titles.jpg"><p>attachment 7</p></td>
     </tr>
   <tr align='center'>
-    <td colspan="5">Затраченное время: 30 мин</td>
+    <td colspan="5">Timeframe : 30 min</td>
   </tr>
 </table>
 
-Ссылка на баг-репорты:
-<a href="https://github.com/Awilum/dev/issues/25">404 File not found clicking on the link "sharing" in the list on the page "View" of the project "Glowy PHP"</a>
+<p>Links to bug reports:<br>
+<a href="https://github.com/Awilum/dev/issues/25">404 File not found clicking on the link "sharing" in the list on the page "View" of the project "Glowy PHP"</a></p>
 
-Ссылка на предложенные улучшения:
+<p>Links to feature suggestions:</p>
 
-
-
-<h3>Тур по ориентирам</h3>
-<p>Цель тура: в проекте проверить функции, которые не главные, но находятся рядом с ними пройтись по документации ради ссылок</p>
-ориентир - пройти по документации, проверяя ссылки
-Время 30 мин
-<p>Окружение:  оpera v. 93.0.4585.37</p>
+<h3 id="the_landmark_tour">The Landmark Tour</h3>
+<p>Goal of the tour:  going from landmark to landmark (
+landmark - links in the project documentation)</p>
+<p>Environment:  оpera v. 93.0.4585.37</p>
 <table style='width:100%'>
   <thead>
     <tr align='centrer' >
-      <th >Что успели протестировать?</th>
-      <th>На что обратили внимание?</th>
-      <th>Приложения</th>
+      <th>Tested</th>
+      <th>Noticed</th>
+      <th>Attachment</th>
     </tr>
   </thead>
     <tr align='justify'>
-        <td align='center'>Переход к документации </td>
-        <td>При переключении между разделами, выделенным остается проект.Возможно стоит выделить каким либо цветом раздел, в котором находится пользователь, или перевести выделение на раздел в котором находится пользователь</td>
-        <td></td>
+        <td rowspan="3" align='center'>Moving through sections</td>
+        <td>the current section is not selected in the side menu. To navigate through the sections, it would be convenient to see which tab from the menu is open (attachment 8)
+        <td align='centrer'><img src="img/no_selection_of_the_current_menu_item.gif"><p>attachment 8</p></td>
     </tr>
     <tr align='justify'>
-        <td rowspan="3" align='center'>Перемещение по разделам</td>
-        <td>В боковом меню не выбранный раздел. Для навигации по разделам, было бы  удобно увидеть, какая вкладка из меню открыта.</td>
-        <td align='centrer'><img src="img/no_selection_of_the_current_menu_item.gif"><p>Рис.</p></td>
-    </tr>
-    <tr align='justify'>
-        <td>При перемещении в длинных разделах долго прокручивать в начало страницы. Было бы удобно довать кнопку перемещения к началу страницы </td>
+        <td>There is a long time to scroll from bottom to top of some pages. It would be convenient to use the button to move to the top of the page</td>
         <td></td>
     </tr>
         <tr align='justify'>
-        <td>Пустая страница Query (рис.)</td>
-        <td align='centrer'><img src="img/emty_page_query.jpg"><p>Рис.</p></td>
+        <td>Page "Query" has no content (attachment 9)</td>
+        <td align='centrer'><img src="img/emty_page_query.jpg"><p>attachment 9</p></td>
     </tr>
     <tr align='justify'>
-        <td align='center'>Расположение элементов на странице</td>
-        <td >В getting help дана ссылка на общий проект. Возможно стоит обозначить, что это ссылка на общий проект, или разместить ссылку в заголовке</td>
-        <td align='centrer'><img src="img/indent_top_after_moving_from_menu.jpg"><p>Рис.</p></td>
+        <td align='center'>Arrangement of elements</td>
+        <td >"Getting help" provides a link to the overall project. Perhaps should be indicated that this is a link to a common project, or place the link in the header (attachment 10)</td>
+        <td align='centrer'><img src="img/indent_top_after_moving_from_menu.jpg"><p>attachment 10</p></td>
     </tr>
     <tr align='justify'>
-        <td  rowspan="2" align='center'>Ссылки в документации Flextype </td>
-        <td>Битая ссылка во вкладке Requirements</td>
-        <td></td>
-    </tr>
-    <tr align='justify'>
-        <td >В getting help дана ссылка на общий проект. Возможно стоит обозначить, что это ссылка на общий проект, или разместить ссылку в заголовке</td>
+        <td   align='center'>Links </td>
+        <td>The page is opened with error clicking on "MAMP" in "Requirements" </td>
         <td></td>
     </tr>
     <tr align='center'>
-      <td colspan="3">Затраченное время: 30 мин</td>
+      <td colspan="3">Timeframe: 30 min</td>
     </tr>
 </table>
 
-Ссылка на баг-репорты:
+<p>Links to bug reports:<br>
 <a href="https://github.com/Awilum/dev/issues/34">404 File not found clicking on the link "MAMP" in the "Thermage" documentation point "Requirements"</a>
 
-Ссылка на предложенные улучшения:
-
-
-
+<p>Links to feature suggestions:</p>
 
 
