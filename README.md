@@ -1,7 +1,7 @@
 <h1>Exploratory Testing Report</h1>
 
 <p>The results of exploratory testing of a <a href="https://awilum.github.io">software development portal </a> by <a href="https://github.com/Awilum">@Awilum</a> using <a href="https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2013/jj620911(v=vs.120)?redirectedfrom=MSDN#exploratory-testing-tours">J.Whittaker's tours</a>.</p>
-<p>Вы также можете ознакомиться с результатами проведения исследовательского тестирования на <a href="RU.md">русском языке</a>.</p>
+<p>Вы также можете ознакомиться с результатами проведения исследовательского тестирования на <a href="README-RU.md">русском языке</a>.</p>
 
 <h2>Which tours are selected</h2>
 <p>Аfter viewing and analyzing the functions of the portal, I chose three tours:</p>
