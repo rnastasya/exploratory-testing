@@ -9,7 +9,7 @@
 <li><a href="#the_landmark_tour">Тур по ориентирам</a> - для детального рассмотрения связей в документации проекта Flextype.</li>
 </ul>
 
-<p>Ссылки на общее описание туров:</p>
+<p>Ссылки на общее описание туров:
 <br><a href="http://okiseleva.blogspot.com/2016/03/supermodel-tour.html">The Supermodel Tour</a><br>
  <a href="http://okiseleva.blogspot.com/2015/07/garbage-collector-tour.html">The Garbage Collector’s Tour</a><br>
  <a href="http://okiseleva.blogspot.com/2015/05/landmark-tour.html">The Landmark Tour</a></p>
